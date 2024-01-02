@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-widht, initial-scale=1.0">
+        <title>online Store</title>
+        
+        <style> 
+            table{
+                border-collapse: collapse;
+                width: auto;
+                margin-bottom: 20px;
+            }
+
+            th ,td{
+                border: 2px solid;
+                padding: 10px;
+                text-align: right;
+            }
+
+            th{
+                background-color: aliceblue;
+            }
+
+        </style>        
+    </head>
+    <body>
+        <!-- <h1>Product List</h1> -->
+        <table>
+            <thead>
+                <th>code</th>
+                <th>Nama Barang</th>
+                <th>Harga</th>
+            </thead>
+            <tbody>ProductList</tbody>
+        </table>
+
+    </body>
+    <h1>User Input</h1>
+    <table>
+        <!-- <thead>
+            <th>Masukan Kode</th>
+            <th>Banyak Barang</th>
+            <th>Harg Barang</th>
+        </thead>
+        <tbody> Input User</tbody> -->
+
+        <tbody>
+            <tr>
+                <td>Masukan Code</td>
+                <td>:</td>
+                <td><input type="text" id="productCode"></td>
+              </tr>
+              <tr>
+                <td>Banyak Barang</td>
+                <td>:</td>
+                <td><input type="number" id="quantity" min="0" value="0" max="3" value="3"></td>
+              </tr>
+            <tr>
+                <td colspan = "3">
+                    <button onclick="hitungTotal">submit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const productCode = {
+            "001": { nama: "Barang A", Harga : 10000 },
+            "002": { nama: "Barang B", Harga : 20000 },
+            "003": { nama: "Barang C", Harga : 30000 },
+        }
+        function displaySetting(){
+            const produkListElement = document.getElementById("productList");
+        }
+        for (const code in produks){
+            const{nama, harga} = produks[Code];
+        }
+        cons row = document.createElement("tr");
+        row innerHtml = <td>${code}</td><td>${nama}</td><td>${harga}</td>; 
+
+        
+    </script>
+
+    
+
+
+
+
+</html>
